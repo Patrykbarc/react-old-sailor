@@ -7,8 +7,13 @@ export default {
         "hero-image": "url('./src/assets/hero-image.jpg')",
       },
       colors: {
-         "brand": "#C39515"
-      }
+        brand: "#C39515",
+        brandHover: "#E8B321",
+      },
+      fontFamily: {
+        title: "'Poppins', sans-serif",
+        body: "'Inter', sans-serif",
+      },
     },
   },
   plugins: [],
