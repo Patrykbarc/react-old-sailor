@@ -1,0 +1,21 @@
+.hero-shadow {
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgb(14, 14, 14);
+    background: linear-gradient(
+      0deg,
+      rgba(14, 14, 14, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
+
+.hero-content {
+  z-index: 2;
+}

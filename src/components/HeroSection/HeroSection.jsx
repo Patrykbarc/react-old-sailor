@@ -1,25 +1,29 @@
 import { Button } from "../Button/Button";
 import { Chevron } from "../Chevron/Chevron";
+import "./HeroSection.scss";
 
 export function Hero() {
-   return (
-      <section id="hero">
-         <div className="relative d-flex flex-col bg-hero-image h-screen bg-cover bg-no-repeat flex items-center justify-center">
-            <div className="container px-8 sm:px-0">
-               <div className="mb-16">
-                  <h1 className="text-brand text-8xl font-title font-semibold mb-12">
-                     The Old Sailor Barber
-                  </h1>
-                  <p className="text-4xl font-body text-white">
-                     A place where style and elegance
-                     <br />
-                     combine with nautical tradition.
-                  </p>
-               </div>
-               <Button props="Book your visit" />
+  return (
+    <section id="hero" className="hero">
+      <div className="d-flex relative flex h-screen flex-col items-center justify-center bg-hero-image bg-cover bg-no-repeat">
+        <div className="hero-shadow" />
+        <div className="hero-content">
+          <div className="container px-8 sm:px-0">
+            <div className="mb-16">
+              <h1 className="mb-12 font-title text-8xl font-semibold text-brand">
+                The Old Sailor Barber
+              </h1>
+              <p className="font-body text-4xl text-white">
+                A place where style and elegance
+                <br />
+                combine with nautical tradition.
+              </p>
             </div>
-            <Chevron />
-         </div>
-      </section>
-   );
+            <Button props="Book your visit" />
+          </div>
+          <Chevron />
+        </div>
+      </div>
+    </section>
+  );
 }

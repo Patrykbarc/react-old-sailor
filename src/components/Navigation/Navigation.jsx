@@ -1,6 +1,6 @@
 export function Navigation() {
   return (
-    <div className="fixed top-0 z-10 w-full py-5">
+    <div className="fixed top-0 z-10 w-full py-5 shadow-xl backdrop-blur">
       <div className="container mx-auto flex justify-between text-xl text-white">
         <a href="">
           <img src="./src/assets/logo.png" alt="" />
