@@ -1,5 +1,5 @@
-const aboutAssetsLink = "./src/assets/about/about-img";
-const servicesAssetsLink = "./src/assets/services/service";
+const aboutAssetsLink = "/about/about-img";
+const servicesAssetsLink = "/services/service";
 
 export const sectionData = [
   {

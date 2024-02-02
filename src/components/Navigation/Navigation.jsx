@@ -22,15 +22,15 @@ export function Navigation() {
     <div className="fixed top-0 z-10 w-full py-5 shadow-xl backdrop-blur-md">
       <div className="container mx-auto flex justify-between text-xl text-white">
         <a href="">
-          <img src="./src/assets/icons/logo.png" alt="" />
+          <img src="/icons/logo.png" alt="" />
         </a>
         <ul className="flex gap-7">
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className="cursor-pointer px-3 transition hover:text-brandHover"
+              className="cursor-pointer px-3 capitalize transition hover:text-brandHover"
             >
-              <a href={link.id}>{link.name}</a>
+              <a href={`#${link.id}`}>{link.name}</a>
             </li>
           ))}
         </ul>
