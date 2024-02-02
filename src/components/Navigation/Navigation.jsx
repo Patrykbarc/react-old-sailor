@@ -21,7 +21,7 @@ const navLinks = [
 
 export function Navigation() {
   return (
-    <div className="fixed top-0 z-10 w-full py-5 shadow-xl backdrop-blur-md">
+    <nav className="fixed top-0 z-10 w-full py-5 shadow-xl backdrop-blur-md">
       <div className="container mx-auto flex justify-between text-xl text-white">
         <Logo orientation="horizontal" />
         <ul className="flex gap-7">
@@ -46,6 +46,6 @@ export function Navigation() {
           <span>+48 100 200 300</span>
         </a>
       </div>
-    </div>
+    </nav>
   );
 }

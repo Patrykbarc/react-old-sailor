@@ -4,6 +4,7 @@ import { Section } from "./components/Section/Section";
 import { Footer } from "./components/Footer/Footer";
 
 import { sectionData } from "./utils/sectionData";
+import { ContactSection } from "./components/ContactSection/ContactSection";
 
 function App() {
   return (
@@ -15,6 +16,11 @@ function App() {
         sectionData={sectionData[1]}
         buttonData={{ showButton: true, buttonText: "Book your visit" }}
       />
+      {/* <Section
+        sectionData={sectionData[2]}
+        buttonData={{ showButton: true, buttonText: "Contact us" }}
+      /> */}
+      <ContactSection />
       <Footer />
     </>
   );

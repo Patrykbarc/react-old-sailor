@@ -79,4 +79,11 @@ export const sectionData = [
       },
     ],
   },
+  {
+    id: "contact",
+    title: "contact",
+    description: [
+      "Do you have questions? Get in touch with us!",
+    ],
+  },
 ];
