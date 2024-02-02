@@ -1,5 +1,4 @@
-export function Logo({ orientation }) {
-  console.log(orientation);
+export function Logo({ orientation = "horizontal" }) {
   return (
     <div>
       {orientation === "horizontal" ? (
