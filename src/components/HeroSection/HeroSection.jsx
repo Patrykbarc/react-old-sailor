@@ -19,7 +19,7 @@ export function Hero() {
                 combine with nautical tradition.
               </p>
             </div>
-            <Button props="Book your visit" />
+            <Button value="Book your visit" />
           </div>
           <Chevron />
         </div>

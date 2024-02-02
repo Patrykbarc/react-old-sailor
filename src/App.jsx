@@ -11,7 +11,10 @@ function App() {
       <Navigation />
       <Hero />
       <Section sectionData={sectionData[0]} />
-      <Section sectionData={sectionData[1]} />
+      <Section
+        sectionData={sectionData[1]}
+        buttonData={{ showButton: true, buttonText: "Book your visit" }}
+      />
       <Footer />
     </>
   );
