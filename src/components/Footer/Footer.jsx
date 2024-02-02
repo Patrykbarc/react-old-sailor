@@ -22,7 +22,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="w-full pb-5 text-white">
+    <footer className="w-full bg-neutral-950 pt-5 pb-5 text-white">
       <div className="container mx-auto">
         <div className="flex justify-between text-xl">
           <Logo orientation="vertical" />

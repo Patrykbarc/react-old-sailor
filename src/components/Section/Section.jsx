@@ -4,10 +4,13 @@ export function Section({ sectionData, buttonData }) {
   const { id, title, description, cards } = sectionData;
   const { showButton, buttonText } = buttonData || {};
 
-  const gridStyle = id === "about" ? "grid-cols-3" : "grid-cols-4";
+  const gridStyle =
+    id === "about"
+      ? "grid-cols-1 sm:grid-cols-3"
+      : "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4";
 
   return (
-    <section className="py-24" id={id}>
+    <section className="mx-8 py-24 pb-0 last-of-type:pb-24 md:pb-24" id={id}>
       <div className="container mx-auto flex flex-col gap-14">
         <div className="flex flex-col gap-16">
           <div>
@@ -31,7 +34,11 @@ export function Section({ sectionData, buttonData }) {
             />
           ))}
         </div>
-        {showButton && <Button value={buttonText} />}
+        {showButton && (
+          <div className="mx-auto">
+            <Button value={buttonText} />
+          </div>
+        )}
       </div>
     </section>
   );
