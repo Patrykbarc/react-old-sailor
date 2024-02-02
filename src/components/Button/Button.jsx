@@ -1,6 +1,6 @@
 export function Button({
   value = "Click",
-  url = {},
+  url = null,
   type = "button",
   size = "lg",
 }) {
@@ -18,11 +18,11 @@ export function Button({
       break;
   }
   return (
-    <a href={url}>
+    <a href={url} className="w-full md:w-fit">
       <input
         type={type}
         value={value}
-        className={`m-auto cursor-pointer rounded-md bg-brand font-body text-lg font-semibold shadow-md transition-colors duration-300 ease-in-out hover:bg-brandHover ${buttonSize} ${buttonFontSize}`}
+        className={`m-auto w-full cursor-pointer rounded-md bg-brand font-body text-lg font-semibold shadow-md transition-colors duration-300 ease-in-out hover:bg-brandHover md:w-fit ${buttonSize} ${buttonFontSize}`}
       />
     </a>
   );

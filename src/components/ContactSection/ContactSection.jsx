@@ -2,9 +2,9 @@ import { ContactForm } from "../ContactForm/ContactForm";
 
 export function ContactSection() {
   return (
-    <section className="mx-8 border py-24 pb-0 last-of-type:pb-24 md:pb-24">
-      <div className="container mx-auto grid grid-cols-2  gap-x-12">
-        <div>
+    <section className="mx-8 py-24 pb-0 last-of-type:pb-24 md:pb-24">
+      <div className="container mx-auto flex grid-cols-2 flex-col gap-x-12  md:grid">
+        <div className="relative">
           <h1 className="mb-6 font-title text-5xl font-semibold uppercase text-brand">
             Do you have questions?
           </h1>

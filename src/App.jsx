@@ -16,10 +16,6 @@ function App() {
         sectionData={sectionData[1]}
         buttonData={{ showButton: true, buttonText: "Book your visit" }}
       />
-      {/* <Section
-        sectionData={sectionData[2]}
-        buttonData={{ showButton: true, buttonText: "Contact us" }}
-      /> */}
       <ContactSection />
       <Footer />
     </>

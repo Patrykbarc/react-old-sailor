@@ -2,8 +2,8 @@ export function Card({ text, src, alt }) {
   return (
     <div>
       <div
-        className="relative flex justify-center overflow-hidden rounded-md border-4 bg-gray-200
-       text-white grayscale transition-all duration-500 hover:border-brand hover:text-brand hover:grayscale-0"
+        className="duration-500hover:text-brand relative flex justify-center overflow-hidden rounded-md
+       bg-gray-200 text-white grayscale transition-all hover:grayscale-0"
       >
         <img
           className="w-full scale-[1.03] transition-transform duration-300 hover:scale-[1.05]"

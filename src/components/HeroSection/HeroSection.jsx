@@ -5,7 +5,7 @@ import "./HeroSection.scss";
 export function Hero() {
   return (
     <section id="hero" className="hero">
-      <div className="d-flex relative flex h-screen flex-col items-center justify-center bg-hero-image bg-cover bg-no-repeat">
+      <div className="d-flex relative flex h-screen flex-col items-center justify-center bg-hero-image bg-cover bg-no-repeat px-8">
         <div className="hero-shadow" />
         <div className="hero-content">
           <div className="container px-8 sm:px-0">

@@ -8,7 +8,7 @@ export function Section({ sectionData = {}, buttonData = {} }) {
   const gridStyle =
     id === "about"
       ? "grid-cols-1 sm:grid-cols-3"
-      : "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4";
+      : "grid-cols-1 sm:grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-4";
 
   return (
     <section className="mx-8 py-24 pb-0 last-of-type:pb-24 md:pb-24" id={id}>
@@ -42,7 +42,7 @@ export function Section({ sectionData = {}, buttonData = {} }) {
           </div>
         )}
         {showButton && (
-          <div className="mx-auto">
+          <div className="flex w-full justify-center">
             <Button value={buttonText} />
           </div>
         )}
