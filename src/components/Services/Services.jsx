@@ -3,19 +3,44 @@ import { Card } from "../AboutCard/AboutCard";
 export function Services() {
   const cards = [
     {
-      text: "Mark",
-      src: "./src/assets/about-img-1.png",
-      alt: "CEO of The Old Sailor Barber",
+      text: "Eyebrow flossing",
+      src: "./src/assets/service-1.jpg",
+      alt: "Eyebrow flossing",
     },
     {
-      text: "Thomas",
-      src: "./src/assets/about-img-2.png",
-      alt: "Co-CEO of The Old Sailor Barber",
+      text: "Men's haircuts",
+      src: "./src/assets/service-2.jpg",
+      alt: "Men's haircuts",
     },
     {
-      text: "Peter",
-      src: "./src/assets/about-img-3.png",
-      alt: "CSO of The Old Sailor Barber",
+      text: "Mustache trimming",
+      src: "./src/assets/service-3.jpg",
+      alt: "Mustache trimming",
+    },
+    {
+      text: "Men's shaving",
+      src: "./src/assets/service-4.jpg",
+      alt: "Men's shaving",
+    },
+    {
+      text: "Cover",
+      src: "./src/assets/service-5.jpg",
+      alt: "Cover",
+    },
+    {
+      text: "Contouring",
+      src: "./src/assets/service-6.jpg",
+      alt: "Contouring",
+    },
+    {
+      text: "Nose depilation",
+      src: "./src/assets/service-7.jpg",
+      alt: "Nose depilation",
+    },
+    {
+      text: "Razor shaving",
+      src: "./src/assets/service-8.jpg",
+      alt: "Razor shaving",
     },
   ];
 
@@ -46,7 +71,7 @@ export function Services() {
             </p>
           </div>
         </div>
-        <div className="container mx-auto grid grid-cols-3 gap-12">
+        <div className="container mx-auto grid grid-cols-4 gap-12">
           {cards.map((card) => (
             <Card
               key={card.src}
