@@ -1,8 +1,12 @@
+import { Card } from "../AboutCard/AboutCard";
+
 export function Section({ sectionData }) {
-  const { id, title, description } = sectionData;
+  const { id, title, description, cards } = sectionData;
+  const gridStyle = id === "about" ? "grid-cols-3" : "grid-cols-4";
+
   return (
-    <section id={id}>
-      <div className="container mx-auto my-24 flex flex-col gap-16">
+    <section className="border py-24" id={id}>
+      <div className="container mx-auto flex flex-col gap-16">
         <div>
           <h1 className="mb-6 font-title text-5xl font-semibold uppercase text-brand">
             {title}
@@ -13,6 +17,11 @@ export function Section({ sectionData }) {
             ))}
           </div>
         </div>
+      </div>
+      <div className={`container mx-auto grid gap-12 ${gridStyle}`}>
+        {cards.map((card) => (
+          <Card key={card.src} text={card.text} src={card.src} alt={card.alt} />
+        ))}
       </div>
     </section>
   );

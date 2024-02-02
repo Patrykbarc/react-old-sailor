@@ -1,20 +1,38 @@
 export function Navigation() {
+  const navLinks = [
+    {
+      id: "about",
+      name: "about us",
+    },
+    {
+      id: "services",
+      name: "services",
+    },
+    {
+      id: "store",
+      name: "store",
+    },
+    {
+      id: "contact",
+      name: "contact",
+    },
+  ];
+
   return (
     <div className="fixed top-0 z-10 w-full py-5 shadow-xl backdrop-blur-md">
       <div className="container mx-auto flex justify-between text-xl text-white">
         <a href="">
-          <img src="./src/assets/logo.png" alt="" />
+          <img src="./src/assets/icons/logo.png" alt="" />
         </a>
         <ul className="flex gap-7">
-          <li className="cursor-pointer px-3 transition hover:text-brandHover">
-            <a href="#about">About us</a>
-          </li>
-          <li className="cursor-pointer px-3 transition hover:text-brandHover">
-            <a href="#">Store</a>
-          </li>
-          <li className="cursor-pointer px-3 transition hover:text-brandHover">
-            <a href="#">Contact</a>
-          </li>
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className="cursor-pointer px-3 transition hover:text-brandHover"
+            >
+              <a href={link.id}>{link.name}</a>
+            </li>
+          ))}
         </ul>
         <a
           href="tel:+100200300"
