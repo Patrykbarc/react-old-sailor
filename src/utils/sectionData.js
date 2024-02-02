@@ -48,9 +48,9 @@ export const sectionData = [
         alt: "Men's haircuts",
       },
       {
-        text: "Mustache trimming",
+        text: "Trimming",
         src: `${servicesAssetsLink}-3.jpg`,
-        alt: "Mustache trimming",
+        alt: "Trimming",
       },
       {
         text: "Men's shaving",
