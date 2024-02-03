@@ -1,6 +1,6 @@
 import { Button } from "../Button/Button";
 import { Chevron } from "../Chevron/Chevron";
-import "./HeroSection.scss";
+import "./HeroSection.pcss";
 
 export function Hero() {
   return (

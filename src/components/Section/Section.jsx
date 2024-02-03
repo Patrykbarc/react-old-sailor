@@ -5,10 +5,7 @@ export function Section({ sectionData = {}, buttonData = {} }) {
   const { id, title, description, cards } = sectionData;
   const { showButton, buttonText } = buttonData;
 
-  const gridStyle =
-    id === "about"
-      ? "grid-cols-1 sm:grid-cols-3"
-      : "grid-cols-1 sm:grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-4";
+  const gridStyle = id === "services" && "md:grid-cols-4 lg:grid-cols-4";
 
   return (
     <section className="mx-8 py-24 pb-0 last-of-type:pb-24 md:pb-24" id={id}>
@@ -30,7 +27,7 @@ export function Section({ sectionData = {}, buttonData = {} }) {
           </div>
         </div>
         {cards && (
-          <div className={`grid gap-12 ${gridStyle}`}>
+          <div className={`grid grid-cols-1 gap-4 sm:grid-cols-3 ${gridStyle}`}>
             {cards.map((card) => (
               <Card
                 key={card.src}

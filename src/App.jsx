@@ -1,5 +1,5 @@
 import { Hero } from "./components/HeroSection/HeroSection";
-import { Navigation } from "./components/Navigation/Navigation";
+import { Navigations } from "./components/Navigations/Navigations";
 import { Section } from "./components/Section/Section";
 import { Footer } from "./components/Footer/Footer";
 
@@ -9,7 +9,7 @@ import { ContactSection } from "./components/ContactSection/ContactSection";
 function App() {
   return (
     <>
-      <Navigation />
+      <Navigations />
       <Hero />
       <Section sectionData={sectionData[0]} />
       <Section

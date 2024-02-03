@@ -1,25 +1,6 @@
 import { Logo } from "../Logo/Logo";
 
-const navLinks = [
-  {
-    id: "about",
-    name: "about us",
-  },
-  {
-    id: "services",
-    name: "services",
-  },
-  {
-    id: "contact",
-    name: "contact",
-  },
-  {
-    id: "store",
-    name: "store",
-  },
-];
-
-export function Navigation() {
+export function NavigationDesktop({navLinks}) {
   return (
     <nav className="fixed top-0 z-10 hidden w-full py-5 shadow-xl backdrop-blur-md md:block">
       <div className="container mx-auto flex justify-between text-xl text-white">
