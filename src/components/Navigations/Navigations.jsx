@@ -23,8 +23,8 @@ const navLinks = [
 export function Navigations() {
   return (
     <>
+      <NavigationMobile navLinks={navLinks} />
       <NavigationDesktop navLinks={navLinks} />
-      <NavigationMobile />
     </>
   );
 }

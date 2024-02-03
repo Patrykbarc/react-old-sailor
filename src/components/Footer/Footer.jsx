@@ -1,4 +1,4 @@
-import { Logo } from "../Logo/Logo";
+import { Logo } from "../../icons/Logo/Logo";
 const date = new Date();
 const currentYear = date.getFullYear();
 const footerLinks = [

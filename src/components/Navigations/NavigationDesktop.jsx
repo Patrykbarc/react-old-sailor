@@ -1,4 +1,4 @@
-import { Logo } from "../Logo/Logo";
+import { Logo } from "../../icons/Logo/Logo";
 
 export function NavigationDesktop({ navLinks }) {
   return (

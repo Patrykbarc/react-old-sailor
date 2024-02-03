@@ -19,7 +19,7 @@ export function Card({ text, src, alt }) {
       
       "
       >
-        <span className="absolute bottom-0 p-3 text-4xl font-bold text-brand opacity-0 group-hover:opacity-100 block w-full backdrop-blur-sm">
+        <span className="absolute bottom-0 block w-full p-2 text-3xl font-bold text-brand opacity-0 backdrop-blur-sm group-hover:opacity-100">
           {text}
         </span>
         <div />
