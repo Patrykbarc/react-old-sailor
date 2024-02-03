@@ -1,6 +1,6 @@
 export function Card({ text, src, alt }) {
   return (
-    <div className="group relative overflow-hidden bg-zinc-900">
+    <div className="group relative overflow-hidden rounded-sm bg-zinc-900">
       <img
         src={src}
         alt={alt}
@@ -9,9 +9,9 @@ export function Card({ text, src, alt }) {
       "
       />
       <div
-        className="pointer-events-none
-      absolute
-      top-0 h-full w-full -translate-x-full
+        className="pointer-events-none absolute
+      top-0
+      h-full w-full -translate-x-full rounded
       transition-transform
       group-hover:-translate-x-0
       group-hover:bg-gray-700

@@ -10,10 +10,10 @@ export function Hero() {
         <div className="hero-content">
           <div className="container px-8 sm:px-0">
             <div className="mb-16">
-              <h1 className="mb-12 font-title text-7xl font-semibold text-brand md:text-8xl">
+              <h1 className="mb-12 font-title text-5xl font-semibold text-brand md:text-8xl">
                 The Old Sailor Barber
               </h1>
-              <p className="font-body text-4xl text-white">
+              <p className="font-body text-2xl text-white md:text-4xl">
                 A place where style and elegance
                 <br />
                 combine with nautical tradition.

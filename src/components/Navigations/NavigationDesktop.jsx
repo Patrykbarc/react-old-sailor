@@ -2,7 +2,7 @@ import { Logo } from "../../icons/Logo/Logo";
 
 export function NavigationDesktop({ navLinks }) {
   return (
-    <nav className="fixed top-0 z-10 hidden w-full py-5 shadow-xl backdrop-blur-md md:block">
+    <nav className="fixed top-0 z-10 hidden w-full py-5 shadow-xl backdrop-blur-md lg:block">
       <div className="container mx-auto flex justify-between text-xl text-white">
         <Logo orientation="horizontal" />
         <ul className="flex gap-7">

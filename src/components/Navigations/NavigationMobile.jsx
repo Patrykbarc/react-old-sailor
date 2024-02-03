@@ -17,14 +17,14 @@ export function NavigationMobile({ navLinks }) {
     <>
       <div onClick={handleSetIsNavShown}>
         {!isNavShown && (
-          <div className="fixed right-0 top-0 z-30 cursor-pointer p-5 md:hidden">
+          <div className="fixed right-0 top-0 z-30 cursor-pointer p-5 lg:hidden">
             <HamburgerIcon />
           </div>
         )}
       </div>
 
       {isNavShown && (
-        <nav className="fixed z-20 w-screen bg-current md:hidden">
+        <nav className="fixed z-20 w-screen bg-current lg:hidden">
           <div className="container relative mx-auto flex h-screen items-center justify-end text-white">
             <div
               className="fixed right-0 top-0 z-30 cursor-pointer p-5"
