@@ -1,19 +1,28 @@
 export function Card({ text, src, alt }) {
   return (
-    <div>
+    <div className="group relative overflow-hidden bg-zinc-900">
+      <img
+        src={src}
+        alt={alt}
+        className="w-full scale-[1.05] duration-300 hover:scale-[1.01]
+      group-hover:saturate-0
+      "
+      />
       <div
-        className="duration-500hover:text-brand relative flex justify-center overflow-hidden rounded-md
-       bg-gray-200 text-white grayscale transition-all hover:grayscale-0"
+        className="pointer-events-none
+      absolute
+      top-0 h-full w-full -translate-x-full
+      transition-transform
+      group-hover:-translate-x-0
+      group-hover:bg-gray-700
+      group-hover:bg-opacity-50
+      
+      "
       >
-        <img
-          className="w-full scale-[1.03] transition-transform duration-300 hover:scale-[1.05]"
-          src={src}
-          alt={alt}
-        />
-        <div className="box-shadow-text md:text-1xl pointer-events-none absolute bottom-0 left-1/2 z-10 w-full -translate-x-1/2 text-center font-title font-bold lg:text-4xl">
-          <span className="relative z-10 block w-full py-1">{text}</span>
-          <div className="absolute bottom-0 z-0 block h-full w-full backdrop-blur-md" />
-        </div>
+        <span className="absolute bottom-0 p-3 text-4xl font-bold text-brand opacity-0 group-hover:opacity-100 block w-full backdrop-blur-sm">
+          {text}
+        </span>
+        <div />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { Button } from "../Button/Button";
 import { Chevron } from "../Chevron/Chevron";
-import "./HeroSection.pcss";
+import "./HeroSection.css";
 
 export function Hero() {
   return (
@@ -27,3 +27,4 @@ export function Hero() {
     </section>
   );
 }
+

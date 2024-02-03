@@ -22,7 +22,7 @@ export function Button({
       <input
         type={type}
         value={value}
-        className={`m-auto w-full cursor-pointer rounded-md bg-brand font-body text-lg font-semibold shadow-md transition-colors duration-300 ease-in-out hover:bg-brandHover md:w-fit ${buttonSize} ${buttonFontSize}`}
+        className={`hover:bg-brand-hover m-auto w-full cursor-pointer rounded-md bg-brand font-body text-lg font-semibold shadow-md transition-colors duration-300 ease-in-out md:w-fit ${buttonSize} ${buttonFontSize}`}
       />
     </a>
   );

@@ -31,7 +31,7 @@ export function Footer() {
             {footerLinks.map((link) => (
               <li
                 key={link.id}
-                className="cursor-pointer px-3 capitalize transition hover:text-brandHover"
+                className="hover:text-brand-hover cursor-pointer px-3 capitalize transition"
               >
                 <a href={`#${link.id}`}>{link.name}</a>
               </li>

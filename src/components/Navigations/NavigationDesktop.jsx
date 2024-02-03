@@ -1,6 +1,6 @@
 import { Logo } from "../Logo/Logo";
 
-export function NavigationDesktop({navLinks}) {
+export function NavigationDesktop({ navLinks }) {
   return (
     <nav className="fixed top-0 z-10 hidden w-full py-5 shadow-xl backdrop-blur-md md:block">
       <div className="container mx-auto flex justify-between text-xl text-white">
@@ -9,7 +9,7 @@ export function NavigationDesktop({navLinks}) {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className="cursor-pointer px-3 capitalize transition hover:text-brandHover"
+              className="hover:text-brand-hover cursor-pointer px-3 capitalize transition"
             >
               <a href={`#${link.id}`}>{link.name}</a>
             </li>
@@ -17,7 +17,7 @@ export function NavigationDesktop({navLinks}) {
         </ul>
         <a
           href="tel:+100200300"
-          className="flex gap-3 text-brand transition hover:text-brandHover"
+          className="hover:text-brand-hover flex gap-3 text-brand transition"
         >
           <img
             className="my-auto h-fit"

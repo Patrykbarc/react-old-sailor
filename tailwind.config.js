@@ -8,7 +8,7 @@ export default {
       },
       colors: {
         brand: "#C39515",
-        brandHover: "#E8B321",
+        "brand-hover": "#E8B321",
       },
       fontFamily: {
         title: "'Poppins', sans-serif",
