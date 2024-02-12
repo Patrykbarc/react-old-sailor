@@ -10,13 +10,13 @@ export function Card({ text, src, alt }) {
       />
       <div
         className="pointer-events-none absolute
-      top-0
-      h-full w-full -translate-x-full rounded
-      transition-transform
-      group-hover:-translate-x-0
-      group-hover:bg-gray-700
-      group-hover:bg-opacity-50
-      
+                   top-0
+                   h-full w-full -translate-x-full rounded
+                   transition-transform
+                   group-hover:-translate-x-0
+                   group-hover:bg-gray-700
+                   group-hover:bg-opacity-50
+                   
       "
       >
         <span className="absolute bottom-0 block w-full p-2 text-3xl font-bold text-brand opacity-0 backdrop-blur-sm group-hover:opacity-100">

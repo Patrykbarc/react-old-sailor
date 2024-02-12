@@ -5,7 +5,7 @@ import { FormTextarea } from "../FormTextarea/FormTextarea";
 export function ContactForm() {
   return (
     <form
-      className="space-y-4 rounded-md border  border-brand p-6"
+      className="mx-auto mt-12 w-full space-y-4 rounded-md border border-brand p-6 lg:w-8/12"
       onSubmit={(e) => e.preventDefault()}
     >
       <FormInput name="name" type="text" placeholder="Your name" />
